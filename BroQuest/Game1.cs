@@ -8,6 +8,7 @@ namespace BroQuest
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        Texture2D saluteTexture;
         
         public Game1()
         {
@@ -23,6 +24,7 @@ namespace BroQuest
         protected override void LoadContent()
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
+            saluteTexture = Content.Load<Texture2D>("salute");
         }
 
         protected override void UnloadContent()
@@ -40,6 +42,12 @@ namespace BroQuest
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
+
+            spriteBatch.Begin();
+
+            spriteBatch.Draw(saluteTexture, new Vector2(100, 100), Color.White);
+
+            spriteBatch.End();
 
             base.Draw(gameTime);
         }
