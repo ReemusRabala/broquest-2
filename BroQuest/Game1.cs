@@ -20,6 +20,9 @@ namespace BroQuest
         protected override void Initialize()
         {
             base.Initialize();
+
+            IsMouseVisible = true;
+
             testNode = new Node(saluteTexture);
         }
 
