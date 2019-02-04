@@ -64,6 +64,7 @@ namespace BroQuest
                 if (mouseState.LeftButton == ButtonState.Pressed)
                 {
                     isLeftMouseReady = false;
+                    string clickResult = currentNode.Input(mouseState);
 
                     if (currentNode == nodeDict["node1"])
                     {
@@ -186,6 +187,13 @@ namespace BroQuest
                     spriteBatch.DrawString(font, word, wordLocation, Color.White);
                 }
             }
+        }
+
+        public string Input(MouseState mouseState)
+        {
+            string result = null;
+
+            return result;
         }
     }
 }
