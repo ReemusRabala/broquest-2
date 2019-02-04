@@ -121,17 +121,31 @@ namespace BroQuest
         int textBoxWidth = 380;
         int lineStep = 20;
 
+        Vector2 buttonOrigin = new Vector2(15, 15);
+        int buttonStep = 35;
+
         public Node(string text, string key)
         {
             string[] lineList = text.Split(new[] { Environment.NewLine },StringSplitOptions.None);
-
+            
             string[] wordList = lineList[0].Split();
             WordList = new List<string>(wordList);
 
-            string[] linkList = lineList[1].Split();
-            LinkString = linkList[1];
-            LinkKey = linkList[0];
+            List<string> optionList = new List<string>(lineList);
+            optionList.RemoveAt(0);
 
+            LinkDict = new Dictionary<string, string>();
+            foreach (string option in optionList)
+            {
+                if (option != null)
+                {
+                    string[] linkList = option.Split();
+                    string linkString = linkList[1];
+                    string linkKey = linkList[0];
+                    LinkDict.Add(linkString, linkKey);
+                }
+            }
+            
             Key = key;
         }
 
@@ -141,8 +155,7 @@ namespace BroQuest
         Texture2D ButtonTexture { get; set; }
         List<string> WordList { get; set; }
         string Key { get; }
-        string LinkString { get; }
-        string LinkKey { get; }
+        Dictionary<string, string> LinkDict { get; set; }
 
         public void LoadContent(ContentManager contentManager)
         {
@@ -158,16 +171,25 @@ namespace BroQuest
             spriteBatch.Draw(TextBackgroundTexture, new Vector2(200, 40), Color.White);
             spriteBatch.Draw(NavigationBarTexture, new Vector2(10, 10), Color.White);
 
-            Color color = Color.White;
-            Point mousePos = mouseState.Position;
-            if ((mousePos.X > 15) && (mousePos.X < 185) && (mousePos.Y > 15) && (mousePos.Y < 45))
+            int buttonY = 0;
+            foreach (string linkString in LinkDict.Keys)
             {
-                color = Color.CornflowerBlue;
+                Color color = Color.White;
+                Point mousePos = mouseState.Position;
+
+                Vector2 buttonPos = buttonOrigin + new Vector2(0, buttonY);
+                if ((mousePos.X > 15) && (mousePos.X < 185) && (mousePos.Y > buttonPos.Y) && (mousePos.Y < buttonPos.Y + 30))
+                {
+                    color = Color.CornflowerBlue;
+                }
+                
+                spriteBatch.Draw(ButtonTexture, buttonPos, color);
+
+                Vector2 textPos = buttonPos + new Vector2(5, 5);
+                spriteBatch.DrawString(font, linkString, textPos, Color.White);
+                buttonY = buttonY + buttonStep;
             }
-
-            spriteBatch.Draw(ButtonTexture, new Vector2(15, 15), color);
-            spriteBatch.DrawString(font, LinkString, new Vector2(20, 20), Color.White);
-
+            
             float textLength = 0;
             float currentLine = 0;
             foreach (string word in WordList)
@@ -195,9 +217,20 @@ namespace BroQuest
             string result = null;
             Point mousePos = mouseState.Position;
 
-            if ((mousePos.X > 15) && (mousePos.X < 185) && (mousePos.Y > 15) && (mousePos.Y < 45))
+            float buttonY = 0;
+            float Xmin = buttonOrigin.X;
+            float Xmax = 185;
+            foreach (string link in LinkDict.Values)
             {
-                result = LinkKey;
+                float Ymin = buttonOrigin.Y + (buttonY * buttonStep);
+                float Ymax = Ymin + 30;
+
+                if ((mousePos.X > Xmin) && (mousePos.X < Xmax) && (mousePos.Y < Ymax) && (mousePos.Y > Ymin))
+                {
+                    result = link;
+                }
+
+                buttonY = buttonY + 1;
             }
 
             return result;
