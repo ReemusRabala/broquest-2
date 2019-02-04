@@ -47,7 +47,7 @@ namespace BroQuest
 
             spriteBatch.Begin();
 
-            spriteBatch.Draw(saluteTexture, new Vector2(100, 100), Color.White);
+            testNode.Draw(spriteBatch);
 
             spriteBatch.End();
 
