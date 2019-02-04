@@ -9,6 +9,7 @@ namespace BroQuest
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         Texture2D saluteTexture;
+        Node testNode;
         
         public Game1()
         {
@@ -19,6 +20,7 @@ namespace BroQuest
         protected override void Initialize()
         {
             base.Initialize();
+            testNode = new Node();
         }
 
         protected override void LoadContent()
