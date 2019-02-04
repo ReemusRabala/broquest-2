@@ -126,8 +126,12 @@ namespace BroQuest
 
         public Node(string text, string key)
         {
-            string[] lineList = text.Split(new[] { Environment.NewLine },StringSplitOptions.None);
-            
+            string[] lineArray = text.Split(new[] { Environment.NewLine },StringSplitOptions.None);
+            List<string> lineList = new List<string>(lineArray);
+
+            TitleString = lineList[0];
+            lineList.RemoveAt(0);
+
             string[] wordList = lineList[0].Split();
             WordList = new List<string>(wordList);
 
@@ -154,6 +158,7 @@ namespace BroQuest
         Texture2D NavigationBarTexture { get; set; }
         Texture2D TitleBarTexture { get; set; }
         Texture2D ButtonTexture { get; set; }
+        string TitleString { get; set; }
         List<string> WordList { get; set; }
         string Key { get; }
         Dictionary<string, string> LinkDict { get; set; }
@@ -170,10 +175,11 @@ namespace BroQuest
         public void Draw(SpriteBatch spriteBatch, SpriteFont font, MouseState mouseState)
         {
             spriteBatch.Draw(Texture, new Vector2(0, 0), Color.White);
-            spriteBatch.Draw(TextBackgroundTexture, new Vector2(200, 50), Color.White);
-            spriteBatch.Draw(NavigationBarTexture, new Vector2(10, 10), Color.White);
-            spriteBatch.Draw(TitleBarTexture, new Vector2(200, 10), Color.White);
 
+            spriteBatch.Draw(TitleBarTexture, new Vector2(200, 10), Color.White);
+            spriteBatch.DrawString(font, TitleString, new Vector2(205, 15), Color.White);
+
+            spriteBatch.Draw(NavigationBarTexture, new Vector2(10, 10), Color.White);
             int buttonY = 0;
             foreach (string linkString in LinkDict.Keys)
             {
@@ -192,7 +198,8 @@ namespace BroQuest
                 spriteBatch.DrawString(font, linkString, textPos, Color.White);
                 buttonY = buttonY + buttonStep;
             }
-            
+
+            spriteBatch.Draw(TextBackgroundTexture, new Vector2(200, 50), Color.White);
             float textLength = 0;
             float currentLine = 0;
             foreach (string word in WordList)

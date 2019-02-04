@@ -1,3 +1,4 @@
-﻿This is the second node in the direction of progress. And this text bax should take up multiple lines within the game. Even more text for this text file to test out its capacity to hold text.
+﻿Node 2
+This is the second node in the direction of progress. And this text bax should take up multiple lines within the game. Even more text for this text file to test out its capacity to hold text.
 node3 Node3
 node1 Node1
