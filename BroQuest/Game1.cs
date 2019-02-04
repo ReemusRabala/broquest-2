@@ -57,10 +57,12 @@ namespace BroQuest
 
     class Node
     {
-        public Node()
+        public Node(Texture2D texture)
         {
-            
+            Texture = texture;
         }
+
+        public Texture2D Texture { get; set; }
 
         public void Draw(SpriteBatch spriteBatch)
         {
