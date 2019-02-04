@@ -24,7 +24,7 @@ namespace BroQuest
 
             IsMouseVisible = true;
 
-            testNode = new Node(saluteTexture);
+            testNode = new Node(saluteTexture, "I am test node");
         }
 
         protected override void LoadContent()
@@ -52,7 +52,7 @@ namespace BroQuest
 
             spriteBatch.Begin();
             
-            testNode.Draw(spriteBatch);
+            testNode.Draw(spriteBatch, font);
             spriteBatch.DrawString(font, "testText", new Vector2(400, 100), Color.White);
 
             spriteBatch.End();
@@ -63,16 +63,19 @@ namespace BroQuest
 
     class Node
     {
-        public Node(Texture2D texture)
+        public Node(Texture2D texture, string text)
         {
             Texture = texture;
+            Text = text;
         }
 
         public Texture2D Texture { get; set; }
+        string Text { get; set; }
 
-        public void Draw(SpriteBatch spriteBatch)
+        public void Draw(SpriteBatch spriteBatch, SpriteFont font)
         {
             spriteBatch.Draw(Texture, new Vector2(0, 0), Color.White);
+            spriteBatch.DrawString(font, Text, new Vector2(400, 200), Color.White);
         }
     }
 }
