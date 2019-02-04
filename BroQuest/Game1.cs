@@ -20,7 +20,7 @@ namespace BroQuest
         protected override void Initialize()
         {
             base.Initialize();
-            testNode = new Node();
+            testNode = new Node(saluteTexture);
         }
 
         protected override void LoadContent()
@@ -66,7 +66,7 @@ namespace BroQuest
 
         public void Draw(SpriteBatch spriteBatch)
         {
-
+            spriteBatch.Draw(Texture, new Vector2(0, 0), Color.White);
         }
     }
 }
