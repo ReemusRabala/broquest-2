@@ -32,11 +32,11 @@ namespace BroQuest
             IsMouseVisible = true;
 
             string node1Text = System.IO.File.ReadAllText("node1.txt");
-            testNode = new Node(node1Text);
+            testNode = new Node(node1Text, "node1");
             testNode.LoadContent(Content);
 
             string node2Text = System.IO.File.ReadAllText("node2.txt");
-            testNode2 = new Node(node2Text);
+            testNode2 = new Node(node2Text, "node2");
             testNode2.LoadContent(Content);
 
             currentNode = testNode2;
@@ -116,15 +116,17 @@ namespace BroQuest
         int textBoxWidth = 380;
         int lineStep = 20;
 
-        public Node(string text)
+        public Node(string text, string key)
         {
             string[] wordList = text.Split();
             WordList = new List<string>(wordList);
+            Key = key;
         }
 
         Texture2D Texture { get; set; }
         Texture2D TextBackgroundTexture { get; set; }
         List<string> WordList { get; set; }
+        string Key { get; }
 
         public void LoadContent(ContentManager contentManager)
         {
