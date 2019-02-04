@@ -110,6 +110,8 @@ namespace BroQuest
 
     class Node
     {
+        int textBoxWidth = 380;
+
         public Node(string text)
         {
             Text = text;
