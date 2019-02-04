@@ -3,6 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Content;
 using System.Collections.Generic;
+using System;
 
 namespace BroQuest
 {
@@ -120,8 +121,14 @@ namespace BroQuest
 
         public Node(string text, string key)
         {
-            string[] wordList = text.Split();
+            string[] lineList = text.Split(new[] { Environment.NewLine },StringSplitOptions.None);
+
+            string[] wordList = lineList[0].Split();
             WordList = new List<string>(wordList);
+
+            string[] linkList = lineList[1].Split();
+            Link = linkList[1];
+
             Key = key;
         }
 
@@ -129,6 +136,7 @@ namespace BroQuest
         Texture2D TextBackgroundTexture { get; set; }
         List<string> WordList { get; set; }
         string Key { get; }
+        string Link { get; }
 
         public void LoadContent(ContentManager contentManager)
         {
@@ -161,6 +169,8 @@ namespace BroQuest
                     spriteBatch.DrawString(font, word, wordLocation, Color.White);
                 }
             }
+
+            spriteBatch.DrawString(font, Link, new Vector2(0, 0), Color.White);
         }
     }
 }

@@ -1,1 +1,2 @@
 ﻿This is the text that the node has.
+node2 Node2
