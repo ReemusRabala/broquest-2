@@ -129,7 +129,7 @@ namespace BroQuest
         {
             spriteBatch.Draw(Texture, new Vector2(0, 0), Color.White);
             spriteBatch.Draw(TextBackgroundTexture, new Vector2(200, 40), Color.White);
-            spriteBatch.DrawString(font, Text, new Vector2(400, 200), Color.White);
+            spriteBatch.DrawString(font, Text, new Vector2(210, 50), Color.White);
         }
     }
 }
