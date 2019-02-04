@@ -10,6 +10,7 @@ namespace BroQuest
         SpriteBatch spriteBatch;
         Texture2D saluteTexture;
         Node testNode;
+        SpriteFont font;
         
         public Game1()
         {
@@ -29,6 +30,7 @@ namespace BroQuest
         protected override void LoadContent()
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
+            font = Content.Load<SpriteFont>("arial_regular_14");
             saluteTexture = Content.Load<Texture2D>("salute");
         }
 
@@ -49,8 +51,9 @@ namespace BroQuest
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             spriteBatch.Begin();
-
+            
             testNode.Draw(spriteBatch);
+            spriteBatch.DrawString(font, "testText", new Vector2(400, 100), Color.White);
 
             spriteBatch.End();
 
