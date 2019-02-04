@@ -93,7 +93,7 @@ namespace BroQuest
 
             spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend);
             
-            currentNode.Draw(spriteBatch, font);
+            currentNode.Draw(spriteBatch, font, Mouse.GetState());
 
             string text;
             if (isLeftMouseReady == true)
@@ -157,6 +157,12 @@ namespace BroQuest
             spriteBatch.Draw(NavigationBarTexture, new Vector2(10, 10), Color.White);
 
             Color color = Color.White;
+            Point mousePos = mouseState.Position;
+            if ((mousePos.X > 15) && (mousePos.X < 185) && (mousePos.Y > 15) && (mousePos.Y < 45))
+            {
+                color = Color.CornflowerBlue;
+            }
+
             spriteBatch.Draw(ButtonTexture, new Vector2(15, 15), color);
             spriteBatch.DrawString(font, LinkString, new Vector2(20, 20), Color.White);
 
