@@ -56,6 +56,15 @@ namespace BroQuest
                 if (mouseState.LeftButton == ButtonState.Pressed)
                 {
                     isLeftMouseReady = false;
+
+                    if (currentNode == testNode)
+                    {
+                        currentNode = testNode2;
+                    }
+                    else
+                    {
+                        currentNode = testNode;
+                    }
                 }
             }
 
