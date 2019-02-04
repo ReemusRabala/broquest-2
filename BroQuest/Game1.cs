@@ -8,8 +8,10 @@ namespace BroQuest
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        Texture2D background;
         SpriteFont font;
+
+        Texture2D background;
+        Texture2D textBackground;
 
         Node testNode;
         Node testNode2;
@@ -31,10 +33,10 @@ namespace BroQuest
             IsMouseVisible = true;
 
             string node1Text = System.IO.File.ReadAllText("node1.txt");
-            testNode = new Node(background, node1Text);
+            testNode = new Node(background, textBackground, node1Text);
 
             string node2Text = System.IO.File.ReadAllText("node2.txt");
-            testNode2 = new Node(background, node2Text);
+            testNode2 = new Node(background, textBackground, node2Text);
 
             currentNode = testNode2;
         }
@@ -44,6 +46,7 @@ namespace BroQuest
             spriteBatch = new SpriteBatch(GraphicsDevice);
             font = Content.Load<SpriteFont>("arial_regular_14");
             background = Content.Load<Texture2D>("background");
+            textBackground = Content.Load<Texture2D>("text_background");
         }
 
         protected override void UnloadContent()
@@ -86,7 +89,7 @@ namespace BroQuest
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            spriteBatch.Begin();
+            spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend);
             
             currentNode.Draw(spriteBatch, font);
 
@@ -109,18 +112,21 @@ namespace BroQuest
 
     class Node
     {
-        public Node(Texture2D texture, string text)
+        public Node(Texture2D texture, Texture2D textBackground, string text)
         {
             Texture = texture;
+            TextBackgroundTexture = textBackground;
             Text = text;
         }
 
         Texture2D Texture { get; set; }
+        Texture2D TextBackgroundTexture { get; set; }
         string Text { get; set; }
 
         public void Draw(SpriteBatch spriteBatch, SpriteFont font)
         {
             spriteBatch.Draw(Texture, new Vector2(0, 0), Color.White);
+            spriteBatch.Draw(TextBackgroundTexture, new Vector2(200, 40), Color.White);
             spriteBatch.DrawString(font, Text, new Vector2(400, 200), Color.White);
         }
     }
