@@ -31,7 +31,7 @@ namespace BroQuest
             testNode = new Node(saluteTexture, "I am test node");
             testNode2 = new Node(saluteTexture, "I am the second node");
 
-            currentNode = testNode;
+            currentNode = testNode2;
         }
 
         protected override void LoadContent()
@@ -59,7 +59,7 @@ namespace BroQuest
 
             spriteBatch.Begin();
             
-            testNode.Draw(spriteBatch, font);
+            currentNode.Draw(spriteBatch, font);
 
             spriteBatch.End();
 
