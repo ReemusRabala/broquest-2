@@ -32,7 +32,9 @@ namespace BroQuest
 
             string node1Text = System.IO.File.ReadAllText("node1.txt");
             testNode = new Node(saluteTexture, node1Text);
-            testNode2 = new Node(saluteTexture, "I am the second node");
+
+            string node2Text = System.IO.File.ReadAllText("node2.txt");
+            testNode2 = new Node(saluteTexture, node2Text);
 
             currentNode = testNode2;
         }
