@@ -106,13 +106,13 @@
     <None Include="app.manifest" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="node1.txt">
+    <Content Include="world\node1.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="node2.txt">
+    <Content Include="world\node2.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="node3.txt">
+    <Content Include="world\node3.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

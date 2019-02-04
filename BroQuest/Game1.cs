@@ -31,15 +31,15 @@ namespace BroQuest
 
             IsMouseVisible = true;
 
-            string node1Text = System.IO.File.ReadAllText("node1.txt");
+            string node1Text = System.IO.File.ReadAllText("world/node1.txt");
             Node testNode = new Node(node1Text, "node1");
             testNode.LoadContent(Content);
 
-            string node2Text = System.IO.File.ReadAllText("node2.txt");
+            string node2Text = System.IO.File.ReadAllText("world/node2.txt");
             Node testNode2 = new Node(node2Text, "node2");
             testNode2.LoadContent(Content);
 
-            string node3Text = System.IO.File.ReadAllText("node3.txt");
+            string node3Text = System.IO.File.ReadAllText("world/node3.txt");
             Node testNode3 = new Node(node3Text, "node3");
             testNode3.LoadContent(Content);
 
