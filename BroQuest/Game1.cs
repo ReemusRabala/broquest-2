@@ -65,14 +65,10 @@ namespace BroQuest
                 {
                     isLeftMouseReady = false;
                     string clickResult = currentNode.Input(mouseState);
-
-                    if (currentNode == nodeDict["node1"])
+                    
+                    if (clickResult != null)
                     {
-                        currentNode = nodeDict["node2"];
-                    }
-                    else
-                    {
-                        currentNode = nodeDict["node1"];
+                        currentNode = nodeDict[clickResult];
                     }
                 }
             }
