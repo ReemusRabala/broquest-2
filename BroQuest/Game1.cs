@@ -112,6 +112,7 @@ namespace BroQuest
     class Node
     {
         Vector2 textOrigin = new Vector2(210, 50);
+        float wordStep = 5;
         int textBoxWidth = 380;
         int lineStep = 20;
 
@@ -136,9 +137,12 @@ namespace BroQuest
             spriteBatch.Draw(Texture, new Vector2(0, 0), Color.White);
             spriteBatch.Draw(TextBackgroundTexture, new Vector2(200, 40), Color.White);
 
+            float textLength = 0;
             foreach (string word in WordList)
             {
-                spriteBatch.DrawString(font, word, textOrigin, Color.White);
+                Vector2 wordLocation = textOrigin + new Vector2(textLength, 0);
+                spriteBatch.DrawString(font, word, wordLocation, Color.White);
+                textLength = wordStep + textLength + font.MeasureString(word).X;
             }
         }
     }
