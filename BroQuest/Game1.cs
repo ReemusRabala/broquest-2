@@ -8,7 +8,6 @@ namespace BroQuest
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        Texture2D saluteTexture;
         Texture2D background;
         SpriteFont font;
 
@@ -44,7 +43,6 @@ namespace BroQuest
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
             font = Content.Load<SpriteFont>("arial_regular_14");
-            saluteTexture = Content.Load<Texture2D>("salute");
             background = Content.Load<Texture2D>("background");
         }
 
