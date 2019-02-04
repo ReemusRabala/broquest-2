@@ -39,8 +39,13 @@ namespace BroQuest
             Node testNode2 = new Node(node2Text, "node2");
             testNode2.LoadContent(Content);
 
+            string node3Text = System.IO.File.ReadAllText("node3.txt");
+            Node testNode3 = new Node(node3Text, "node3");
+            testNode3.LoadContent(Content);
+
             nodeDict.Add("node1", testNode);
             nodeDict.Add("node2", testNode2);
+            nodeDict.Add("node3", testNode3);
 
             currentNode = nodeDict["node1"];
         }
