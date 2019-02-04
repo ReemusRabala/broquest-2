@@ -16,6 +16,8 @@ namespace BroQuest
 
         Node currentNode;
 
+        bool isLeftMouseReady = true;
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
