@@ -116,9 +116,9 @@ namespace BroQuest
 
     class Node
     {
-        Vector2 textOrigin = new Vector2(210, 50);
+        Vector2 textOrigin = new Vector2(205, 55);
         float wordStep = 5;
-        int textBoxWidth = 380;
+        int textBoxWidth = 585;
         int lineStep = 20;
 
         Vector2 buttonOrigin = new Vector2(15, 15);
