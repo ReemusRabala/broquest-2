@@ -53,7 +53,6 @@ namespace BroQuest
             spriteBatch.Begin();
             
             testNode.Draw(spriteBatch, font);
-            spriteBatch.DrawString(font, "testText", new Vector2(400, 100), Color.White);
 
             spriteBatch.End();
 
