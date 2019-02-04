@@ -61,5 +61,10 @@ namespace BroQuest
         {
             
         }
+
+        public void Draw(SpriteBatch spriteBatch)
+        {
+
+        }
     }
 }
