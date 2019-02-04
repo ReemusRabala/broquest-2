@@ -68,7 +68,7 @@ namespace BroQuest
             Text = text;
         }
 
-        public Texture2D Texture { get; set; }
+        Texture2D Texture { get; set; }
         string Text { get; set; }
 
         public void Draw(SpriteBatch spriteBatch, SpriteFont font)
