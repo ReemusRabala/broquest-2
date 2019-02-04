@@ -141,8 +141,18 @@ namespace BroQuest
             foreach (string word in WordList)
             {
                 Vector2 wordLocation = textOrigin + new Vector2(textLength, 0);
-                spriteBatch.DrawString(font, word, wordLocation, Color.White);
                 textLength = wordStep + textLength + font.MeasureString(word).X;
+
+                if (textLength < textBoxWidth)
+                {
+                    spriteBatch.DrawString(font, word, wordLocation, Color.White);
+                }
+                else
+                {
+                    textLength = 0;
+                    wordLocation = textOrigin + new Vector2(textLength, 0);
+                    spriteBatch.DrawString(font, word, wordLocation, Color.White);
+                }
             }
         }
     }
