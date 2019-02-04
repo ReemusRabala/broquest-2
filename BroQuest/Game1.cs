@@ -127,7 +127,8 @@ namespace BroQuest
             WordList = new List<string>(wordList);
 
             string[] linkList = lineList[1].Split();
-            Link = linkList[1];
+            LinkString = linkList[1];
+            LinkKey = linkList[0];
 
             Key = key;
         }
@@ -136,7 +137,8 @@ namespace BroQuest
         Texture2D TextBackgroundTexture { get; set; }
         List<string> WordList { get; set; }
         string Key { get; }
-        string Link { get; }
+        string LinkString { get; }
+        string LinkKey { get; }
 
         public void LoadContent(ContentManager contentManager)
         {
@@ -170,7 +172,7 @@ namespace BroQuest
                 }
             }
 
-            spriteBatch.DrawString(font, Link, new Vector2(0, 0), Color.White);
+            spriteBatch.DrawString(font, LinkString, new Vector2(0, 0), Color.White);
         }
     }
 }
