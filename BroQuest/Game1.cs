@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Content;
 
 namespace BroQuest
 {
@@ -9,9 +10,6 @@ namespace BroQuest
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         SpriteFont font;
-
-        Texture2D background;
-        Texture2D textBackground;
 
         Node testNode;
         Node testNode2;
@@ -33,10 +31,12 @@ namespace BroQuest
             IsMouseVisible = true;
 
             string node1Text = System.IO.File.ReadAllText("node1.txt");
-            testNode = new Node(background, textBackground, node1Text);
+            testNode = new Node(node1Text);
+            testNode.LoadContent(Content);
 
             string node2Text = System.IO.File.ReadAllText("node2.txt");
-            testNode2 = new Node(background, textBackground, node2Text);
+            testNode2 = new Node(node2Text);
+            testNode2.LoadContent(Content);
 
             currentNode = testNode2;
         }
@@ -45,8 +45,6 @@ namespace BroQuest
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
             font = Content.Load<SpriteFont>("arial_regular_14");
-            background = Content.Load<Texture2D>("background");
-            textBackground = Content.Load<Texture2D>("text_background");
         }
 
         protected override void UnloadContent()
@@ -112,16 +110,20 @@ namespace BroQuest
 
     class Node
     {
-        public Node(Texture2D texture, Texture2D textBackground, string text)
+        public Node(string text)
         {
-            Texture = texture;
-            TextBackgroundTexture = textBackground;
             Text = text;
         }
 
         Texture2D Texture { get; set; }
         Texture2D TextBackgroundTexture { get; set; }
         string Text { get; set; }
+
+        public void LoadContent(ContentManager contentManager)
+        {
+            Texture = contentManager.Load<Texture2D>("background");
+            TextBackgroundTexture = contentManager.Load<Texture2D>("text_background");
+        }
 
         public void Draw(SpriteBatch spriteBatch, SpriteFont font)
         {
