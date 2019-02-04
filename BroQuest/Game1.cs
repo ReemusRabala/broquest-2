@@ -12,8 +12,7 @@ namespace BroQuest
         SpriteBatch spriteBatch;
         SpriteFont font;
 
-        Node testNode;
-        Node testNode2;
+        Dictionary<string, Node> nodeDict = new Dictionary<string, Node>();
 
         Node currentNode;
 
@@ -32,14 +31,17 @@ namespace BroQuest
             IsMouseVisible = true;
 
             string node1Text = System.IO.File.ReadAllText("node1.txt");
-            testNode = new Node(node1Text, "node1");
+            Node testNode = new Node(node1Text, "node1");
             testNode.LoadContent(Content);
 
             string node2Text = System.IO.File.ReadAllText("node2.txt");
-            testNode2 = new Node(node2Text, "node2");
+            Node testNode2 = new Node(node2Text, "node2");
             testNode2.LoadContent(Content);
 
-            currentNode = testNode2;
+            nodeDict.Add("node1", testNode);
+            nodeDict.Add("node2", testNode2);
+
+            currentNode = nodeDict["node1"];
         }
 
         protected override void LoadContent()
@@ -62,13 +64,13 @@ namespace BroQuest
                 {
                     isLeftMouseReady = false;
 
-                    if (currentNode == testNode)
+                    if (currentNode == nodeDict["node1"])
                     {
-                        currentNode = testNode2;
+                        currentNode = nodeDict["node2"];
                     }
                     else
                     {
-                        currentNode = testNode;
+                        currentNode = nodeDict["node1"];
                     }
                 }
             }
