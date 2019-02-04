@@ -9,9 +9,11 @@ namespace BroQuest
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         Texture2D saluteTexture;
-        Node testNode;
         SpriteFont font;
-        
+
+        Node testNode;
+        Node testNode2;
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -25,6 +27,7 @@ namespace BroQuest
             IsMouseVisible = true;
 
             testNode = new Node(saluteTexture, "I am test node");
+            testNode2 = new Node(saluteTexture, "I am the second node");
         }
 
         protected override void LoadContent()
