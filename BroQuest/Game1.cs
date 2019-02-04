@@ -192,6 +192,12 @@ namespace BroQuest
         public string Input(MouseState mouseState)
         {
             string result = null;
+            Point mousePos = mouseState.Position;
+
+            if ((mousePos.X > 15) && (mousePos.X < 185) && (mousePos.Y > 15) && (mousePos.Y < 45))
+            {
+                result = LinkKey;
+            }
 
             return result;
         }
