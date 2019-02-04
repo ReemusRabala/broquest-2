@@ -52,4 +52,12 @@ namespace BroQuest
             base.Draw(gameTime);
         }
     }
+
+    class Node
+    {
+        public Node()
+        {
+            
+        }
+    }
 }
