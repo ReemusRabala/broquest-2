@@ -97,17 +97,6 @@ namespace BroQuest
             
             currentNode.Draw(spriteBatch, font, Mouse.GetState());
 
-            string text;
-            if (isLeftMouseReady == true)
-            {
-                text = "left mouse is ready";
-            }
-            else
-            {
-                text = "left mouse is not ready";
-            }
-            spriteBatch.DrawString(font, text, new Vector2(100, 400), Color.White);
-
             spriteBatch.End();
 
             base.Draw(gameTime);
