@@ -30,7 +30,8 @@ namespace BroQuest
 
             IsMouseVisible = true;
 
-            testNode = new Node(saluteTexture, "I am test node");
+            string node1Text = System.IO.File.ReadAllText("node1.txt");
+            testNode = new Node(saluteTexture, node1Text);
             testNode2 = new Node(saluteTexture, "I am the second node");
 
             currentNode = testNode2;
