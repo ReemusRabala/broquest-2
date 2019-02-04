@@ -49,8 +49,23 @@ namespace BroQuest
 
         protected override void Update(GameTime gameTime)
         {
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
-                Exit();
+            MouseState mouseState = Mouse.GetState();
+
+            if (isLeftMouseReady == true)
+            {
+                if (mouseState.LeftButton == ButtonState.Pressed)
+                {
+                    isLeftMouseReady = false;
+                }
+            }
+
+            if (isLeftMouseReady == false)
+            {
+                if (mouseState.LeftButton == ButtonState.Released)
+                {
+                    isLeftMouseReady = true;
+                }
+            }
 
             base.Update(gameTime);
         }
@@ -62,6 +77,17 @@ namespace BroQuest
             spriteBatch.Begin();
             
             currentNode.Draw(spriteBatch, font);
+
+            string text;
+            if (isLeftMouseReady == true)
+            {
+                text = "left mouse is ready";
+            }
+            else
+            {
+                text = "left mouse is not ready";
+            }
+            spriteBatch.DrawString(font, text, new Vector2(100, 400), Color.White);
 
             spriteBatch.End();
 
