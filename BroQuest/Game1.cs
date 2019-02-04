@@ -135,6 +135,8 @@ namespace BroQuest
 
         Texture2D Texture { get; set; }
         Texture2D TextBackgroundTexture { get; set; }
+        Texture2D NavigationBarTexture { get; set; }
+        Texture2D ButtonTexture { get; set; }
         List<string> WordList { get; set; }
         string Key { get; }
         string LinkString { get; }
@@ -144,12 +146,19 @@ namespace BroQuest
         {
             Texture = contentManager.Load<Texture2D>("background");
             TextBackgroundTexture = contentManager.Load<Texture2D>("text_background");
+            NavigationBarTexture = contentManager.Load<Texture2D>("navigation_bar");
+            ButtonTexture = contentManager.Load<Texture2D>("button");
         }
 
-        public void Draw(SpriteBatch spriteBatch, SpriteFont font)
+        public void Draw(SpriteBatch spriteBatch, SpriteFont font, MouseState mouseState)
         {
             spriteBatch.Draw(Texture, new Vector2(0, 0), Color.White);
             spriteBatch.Draw(TextBackgroundTexture, new Vector2(200, 40), Color.White);
+            spriteBatch.Draw(NavigationBarTexture, new Vector2(10, 10), Color.White);
+
+            Color color = Color.White;
+            spriteBatch.Draw(ButtonTexture, new Vector2(15, 15), color);
+            spriteBatch.DrawString(font, LinkString, new Vector2(20, 20), Color.White);
 
             float textLength = 0;
             float currentLine = 0;
@@ -171,8 +180,6 @@ namespace BroQuest
                     spriteBatch.DrawString(font, word, wordLocation, Color.White);
                 }
             }
-
-            spriteBatch.DrawString(font, LinkString, new Vector2(0, 0), Color.White);
         }
     }
 }
