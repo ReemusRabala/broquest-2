@@ -14,6 +14,8 @@ namespace BroQuest
         Node testNode;
         Node testNode2;
 
+        Node currentNode;
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -28,6 +30,8 @@ namespace BroQuest
 
             testNode = new Node(saluteTexture, "I am test node");
             testNode2 = new Node(saluteTexture, "I am the second node");
+
+            currentNode = testNode;
         }
 
         protected override void LoadContent()
