@@ -1,0 +1,3 @@
+﻿Node 25
+You step right. The orc turns to face you and notices Grog. Grog reaches to join the fight, however the orc is too good of a fighter and kills both of you. Game over.
+node1 Restart
