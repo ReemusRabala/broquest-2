@@ -1,0 +1,3 @@
+﻿Node 4
+The orc lands exactly where you were standing and strikes at Jorma, who was standing right behind you, splitting his skull in two. The orc starts janking the axe out with little success.
+node5 Stab

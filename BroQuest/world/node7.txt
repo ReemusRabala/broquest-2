@@ -1,0 +1,3 @@
+﻿Node 7
+As you raise your leg to kick the orc, the orc releases its axe and grabs its dagger from its belt and stabs your leg. You retract your leg and fall over as you try to stand on the stabbed leg.
+node8 Cry

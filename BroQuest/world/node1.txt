@@ -1,4 +1,3 @@
 ﻿Node 1
-This is the text that the node has.
-node2 Node2
-node3 Node3
+You, Grog and Jorma find the orc that you have been tracking. Its right there, cooking a meal.
+node2 Charge

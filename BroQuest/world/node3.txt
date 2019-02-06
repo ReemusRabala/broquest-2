@@ -1,4 +1,3 @@
 ﻿Node 3
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend tincidunt justo, ut accumsan ligula convallis in. Aliquam venenatis eget mi rutrum efficitur. In erat urna, volutpat at tempus id, condimentum dictum sem. Quisque sodales egestas tellus cursus tincidunt. Maecenas vitae rhoncus quam. Aliquam dictum auctor magna vel ornare. Donec placerat massa diam, sit amet facilisis velit pharetra eu. Maecenas condimentum, quam id maximus consectetur, odio ex congue massa, at finibus nulla ex vitae enim. Ut quis lacus a quam porttitor dictum in quis ante. Ut at ex dolor. Suspendisse cursus mollis felis, et finibus quam pellentesque quis. In id justo eleifend, dapibus quam vitae, luctus libero. Maecenas sed laoreet nisl.
-node1 Node1
-node2 Node2
+You find the orc's footprints and you start tracking the orc. You track the footprints when, suddenly, you hear rustling from a nearby tree.
+node4 Sidestep

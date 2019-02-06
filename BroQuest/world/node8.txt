@@ -1,0 +1,3 @@
+﻿Node 8
+As you cry for mercy, the orc thrusts at your heart and kills you. Game Over.
+node1 Try_Again
