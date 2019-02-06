@@ -1,0 +1,3 @@
+﻿Node 29
+You investigate what the elder has on his person and find a pouch of cold strapped to his belt. You take the pouch. During this looting, a mob of angry villagers gathers around you.
+node30 Hide_in_house
