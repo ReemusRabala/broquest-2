@@ -1,3 +1,4 @@
 ﻿Node 31
 You grab the elder and pull him out of the reach of Grog, causing the elder to thrust at air. You grab the elder's hand which holds the knife and wrest the knife away from him. Elder now starts punching at you.
 node32 Calm_him_down
+node38 Fuck_that
