@@ -1,0 +1,3 @@
+﻿Node 15
+You violently let go of the sword. The orc is gets distracted with stabilizing your sword.
+node16 Grab_your_dagger

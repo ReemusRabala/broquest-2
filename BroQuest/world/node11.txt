@@ -1,0 +1,3 @@
+﻿Node 11
+You go to the barn and start discussing your next course of action. You agree that it is best if you go to sleep and see if morning brings better thoughts.
+node12 Go_to_Sleep

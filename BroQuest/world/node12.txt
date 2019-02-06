@@ -1,0 +1,3 @@
+﻿Node 12
+You get waken up by your couching. Awakened, you discover that the barn is burning. You wake up your bros.
+node13 Find_exit

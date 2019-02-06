@@ -1,3 +1,4 @@
 ﻿Node 5
 The orc notices the tip of your sword coming towards him and crabs your blade with his bare hand.
-node6 Jank
+node6 Jank_away_sword
+node15 Let_go

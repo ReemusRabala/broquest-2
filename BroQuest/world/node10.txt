@@ -1,0 +1,3 @@
+﻿Node 10
+You tell the elder how the orc slipped from your hands. Village elder scolds you and tells you that this is unacceptable. He tells you and your bros that we can spend this day sleeping in the haybarn and as of tomorrow we are banished from this village.
+node11 Go_to_barn

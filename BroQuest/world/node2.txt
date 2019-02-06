@@ -1,3 +1,4 @@
 ﻿Node 2
 You charge the orc with Grog and Jorma. The orc notices you and belts towards the trees. The orc vanishes into the trees before you can catch it.
-node3 Tracking
+node3 Track_the_orc
+node9 Return_home

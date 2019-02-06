@@ -1,0 +1,3 @@
+﻿Node 9
+You turn around and start going back the way you came from. After a few hours you return back to your village. Village elder asks where is the head of the orc.
+node10 We_failed

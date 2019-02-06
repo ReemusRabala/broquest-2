@@ -1,0 +1,3 @@
+﻿Node 16
+You grab your dagger from your belt and stab the distracted orc between his ribs. The orc starts swinging around with your sword in his hand.
+node17 Back_Away

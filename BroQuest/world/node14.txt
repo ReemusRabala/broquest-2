@@ -1,0 +1,3 @@
+﻿Node 14
+You, Jorma and Grog clamber your way to the hatch and jump out. You strain your ankle jumping from so high but nothing more serious happens. Standing up, you notice that the whole village is burning. Game Over.
+node1 Restart
