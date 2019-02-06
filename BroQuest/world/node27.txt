@@ -1,3 +1,4 @@
 ﻿Node 27
 You confront the elder. You tell him that you will not leave this village without the money that has been promised. Things escalate and the elder pulls his warknife from his belt and thrusts at Grog.
 node28 Strike_back
+node31 Restrain_elder
