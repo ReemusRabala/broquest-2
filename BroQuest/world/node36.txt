@@ -1,0 +1,3 @@
+﻿Node 36
+You turn your back to the orc and run towards Grog. You see Grog running towards you from some distance.
+node37 Grog_ambush

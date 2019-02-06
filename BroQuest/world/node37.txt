@@ -1,0 +1,3 @@
+﻿Node 37
+You motion Grog to hide behind a tree. Grog does that and you run past that tree. The orc does not notice that Grog is hiding there. Grog swings at the orc just as it is going to pass the tree. The orc gets knocked out. Grog stabs it in the heart to be sure that it is dead. You have defeated the orc. You have won.
+node1 Restart
