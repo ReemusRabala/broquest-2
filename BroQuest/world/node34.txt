@@ -1,0 +1,3 @@
+﻿Node 34
+You and bros run towards the woodline as fast as your legs could carry you. Once you are far enough, you weigh your options from here on with your bros.
+node35 Become_bandits
