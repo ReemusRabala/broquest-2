@@ -1,0 +1,3 @@
+﻿Node 22
+You sidestep the axe as the orc brings it down. Orcs keeps swinging at you, he is obviously a superior fighter and will surely break your guard eventually.
+node23 Keep_fighting

@@ -1,0 +1,3 @@
+﻿Node 23
+You notice Grog running towards you from the right.
+node24 Step_left
