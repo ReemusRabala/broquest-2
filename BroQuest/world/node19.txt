@@ -1,3 +1,4 @@
 ﻿Node 19
 You and bros approach the bushes and angrily quip at the bushes "Dafuk is going on?". An orc jumps out at you.
 node20 Run
+node26 Fight
