@@ -1,0 +1,3 @@
+﻿Node 20
+Orc chases after you and cuts you down one by one with his axe. You have died. Game over.
+node1 Restart

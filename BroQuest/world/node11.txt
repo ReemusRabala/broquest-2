@@ -1,3 +1,4 @@
 ﻿Node 11
-You go to the barn and start discussing your next course of action. You agree that it is best if you go to sleep and see if morning brings better thoughts.
+You go to the barn and start discussing your next course of action. Two avenues of action rise to the top. First one being that you sleep on it and see if morning is wiser than the evening. Second one being that you just leave the village in the middle of the night.
 node12 Go_to_Sleep
+node18 Wait_for_night
