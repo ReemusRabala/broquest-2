@@ -255,16 +255,41 @@ namespace BroQuest
 
         private static void DrawWord(SpriteBatch spriteBatch, SpriteFont font, string word, Vector2 wordLocation, Dictionary<string, string> charDict)
         {
+            bool endsWithPoint = false;
+            bool endsWithComma = false;
             string renderWord = word;
             Color color = Color.White;
 
-            if ((word.StartsWith("[")) && (word.EndsWith("]")))
+            if (renderWord.EndsWith("."))
+            {
+                endsWithPoint = true;
+                char[] firstTrimChars = { '.' };
+                renderWord = renderWord.Trim(firstTrimChars);
+            }
+            else if (renderWord.EndsWith(","))
+            {
+                endsWithComma = true;
+                char[] firstTrimChars = { ',' };
+                renderWord = renderWord.Trim(firstTrimChars);
+            }
+
+            if ((renderWord.StartsWith("[")) && (renderWord.EndsWith("]")))
             {
                 char[] charsToTrim = { '[', ']' };
-                string trimmedWord = word.Trim(charsToTrim);
+                string trimmedWord = renderWord.Trim(charsToTrim);
 
                 renderWord = charDict[trimmedWord];
+                
                 color = Color.LightGreen;
+            }
+
+            if (endsWithPoint)
+            {
+                renderWord = renderWord + '.';
+            }
+            else if (endsWithComma)
+            {
+                renderWord = renderWord + ',';
             }
 
             spriteBatch.DrawString(font, renderWord, wordLocation, color);
