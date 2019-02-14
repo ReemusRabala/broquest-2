@@ -1,3 +1,0 @@
-﻿Node 35
-You agree to become bandits from now on. One fine day you will find your end at the end of a soldier's blade anyways, so what is there to lose. Game over.
-node1 Restart

@@ -1,3 +1,0 @@
-﻿Node 24
-You step left and the orc turns to face you. At the same time Grog is running towards the orc who has its back turned at him. You deflect a few of the orc's blows. Eventually Grog reaches you and lodges his hatches as deep into the orc's back as he can. The orc flails around a few moments and dies. You have killed the orc. You have won. Game Over.
-node1 Restart

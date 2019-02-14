@@ -1,4 +1,0 @@
-﻿Node 6
-You try to jank the sword away from the orc. Orc janks back and you stumble towards the orc.
-node7 Kick
-node40 Grapple_orc

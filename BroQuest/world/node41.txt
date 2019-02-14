@@ -1,3 +1,0 @@
-﻿Node 41
-You search for a rock with your free hand. You find a bigass rock just in your reach. You grab it and slam several times over the orc's head. Orc is knocked out. You stab the orc to make sure it is dead. You have won, you have killed the orc.
-node1 Restart

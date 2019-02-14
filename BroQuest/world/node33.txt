@@ -1,3 +1,0 @@
-﻿Node 33
-Elder displays scepticism, but accepts your proposed course of action. Thus, you set out to find the orc again.
-node1 Start_tracking

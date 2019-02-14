@@ -1,3 +1,0 @@
-﻿Node 21
-You shout at Grog that the orc is here. Grog shouts back that he is coming. At the same time the orc janks out his axe from Jorma's skull and raises his axe to swing at you.
-node22 Sidestep

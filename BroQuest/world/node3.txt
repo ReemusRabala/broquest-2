@@ -1,3 +1,0 @@
-﻿Node 3
-You find the orc's footprints and you start tracking the orc. You track the footprints when, suddenly, you hear rustling from a nearby tree.
-node4 Sidestep

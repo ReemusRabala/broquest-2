@@ -1,4 +1,0 @@
-﻿Node 28
-As the elder grabbed his knife and thrusted towards Grog, you drew your sword and took a swing at the elder. Grog got lightly wounded by the elder's knife. Elder however, sustained a severe cut between his shoulder and neck with blood quirting out. He dies few moments later.
-node29 Loot_elder
-node34 GTFO

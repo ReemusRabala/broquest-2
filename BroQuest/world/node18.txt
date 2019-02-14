@@ -1,3 +1,0 @@
-﻿Node 18
-It is now night time and everyone in the village seems to be sleeping. You and bros climb down from the haybale and exit the barn. You notice movement in bushes near you.
-node19 Investigate

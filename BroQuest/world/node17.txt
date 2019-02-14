@@ -1,3 +1,0 @@
-﻿Node 17
-You distance yourself from the orc as it starts swinging. The orc does a few swings and collapses. You have done it, you have killed the orc. Game Over.
-node1 Restart

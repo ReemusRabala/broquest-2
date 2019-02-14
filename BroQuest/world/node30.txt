@@ -1,3 +1,0 @@
-﻿Node 30
-You and your bros dash towards the closest farmhouse, enter it and bar the door from the inside. The mob gathers around the house and tries to get inside. Failing to get inside, they bar the farmhouse door from outside and set this house on fire. You burn alive and die. Game over.
-node1 Restart

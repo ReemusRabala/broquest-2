@@ -1,3 +1,0 @@
-﻿Node 40
-You push with your legs to give you some more momentum and you jump onto the orc, trying to wrestle it. Orc is much stronger and bigger than you and wrestles you to the ground easily. Orc starts to strangle you.
-node41 Grab_rock

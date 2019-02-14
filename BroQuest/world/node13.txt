@@ -1,3 +1,0 @@
-﻿Node 13
-You and bros search for an exist which is not blocked by fire. Jorma shouts that the patch to attic hatch is clear.
-node14 Use_hatch

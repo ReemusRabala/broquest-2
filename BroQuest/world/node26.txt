@@ -1,3 +1,0 @@
-﻿Node 26
-You stand your ground and fight the orc. The orc is a formidable opponent, but 3 opponents is clearly too much for it to handle and the three of you manage to slay the orc. You have slain the orc. You have won.
-node1 Restart

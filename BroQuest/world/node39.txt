@@ -1,3 +1,0 @@
-﻿Node 39
-You tell the entire crowd to go fuck themselves. The crowd grabs their pitchforks and runs you over, stabbing you to death with pitchforks. You die. Game over.
-node1 Restart
