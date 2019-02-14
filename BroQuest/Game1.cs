@@ -144,7 +144,7 @@ namespace BroQuest
             {
                 if (option != null)
                 {
-                    string[] linkList = option.Split();
+                    string[] linkList = option.Split('>');
                     string linkString = linkList[1];
                     string linkKey = linkList[0];
                     LinkDict.Add(linkString, linkKey);
