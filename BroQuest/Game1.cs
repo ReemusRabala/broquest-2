@@ -226,7 +226,7 @@ namespace BroQuest
             foreach (string word in WordList)
             {
                 Vector2 wordLocation = textOrigin + new Vector2(textLength, currentLine * lineStep);
-                textLength = wordStep + textLength + font.MeasureString(word).X;
+                textLength = wordStep + textLength + MeasureWord(font, word, charDict);
 
                 if (textLength < textBoxWidth)
                 {
@@ -258,6 +258,22 @@ namespace BroQuest
             }
 
             spriteBatch.DrawString(font, renderWord, wordLocation, color);
+        }
+
+        private float MeasureWord(SpriteFont font, string word, Dictionary<string, string> charDict)
+        {
+            float result = font.MeasureString(word).X;
+
+            if ((word.StartsWith("[")) && (word.EndsWith("]")))
+            {
+                char[] charsToTrim = { '[', ']' };
+                string trimmedWord = word.Trim(charsToTrim);
+
+                string displayedWord = charDict[trimmedWord];
+                result = font.MeasureString(displayedWord).X;
+            }
+
+            return result;
         }
 
         public string Input(MouseState mouseState)
