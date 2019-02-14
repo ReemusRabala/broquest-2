@@ -44,17 +44,17 @@ namespace BroQuest
                 {
                     string firstLine = new System.IO.StringReader(block).ReadLine();
                     string[] firstLineArray = firstLine.Split();
-                    string key = firstLineArray[1];
+                    string blockType = firstLineArray[0];
 
-                    Node node = new Node(block, key);
-                    node.LoadContent(Content);
-                    nodeDict.Add(key, node);
+                    if (blockType == "!")
+                    {
+                        string key = firstLineArray[1];
+
+                        Node node = new Node(block, key);
+                        node.LoadContent(Content);
+                        nodeDict.Add(key, node);
+                    }
                 }
-
-                /*string fileName = System.IO.Path.GetFileNameWithoutExtension(filePath);
-                Node node = new Node(nodeText, fileName);
-                node.LoadContent(Content);
-                nodeDict.Add(fileName, node);*/
             }
 
             currentNode = nodeDict["node1"];
