@@ -1,11 +1,11 @@
 ﻿! node1
 Node 1
-You, [grog] and Jorma find the orc that you have been tracking. Its right there, cooking a meal.
+You, [grog] and [jorma] find the orc that you have been tracking. Its right there, cooking a meal.
 node2>Charge
 
 ! node2
 Node 2
-You charge the orc with [grog] and Jorma. The orc notices you and belts towards the trees. The orc vanishes into the trees before you can catch it.
+You charge the orc with [grog] and [jorma]. The orc notices you and belts towards the trees. The orc vanishes into the trees before you can catch it.
 node3>Track the orc
 node9>Return home
 
@@ -16,7 +16,7 @@ node4>Sidestep
 
 ! node4
 Node 4
-The orc lands exactly where you were standing and strikes at Jorma, who was standing right behind you, splitting his skull in two. The orc starts janking the axe out with little success.
+The orc lands exactly where you were standing and strikes at [jorma], who was standing right behind you, splitting his skull in two. The orc starts janking the axe out with little success.
 node5>Stab
 node21>Call [grog]
 
@@ -66,12 +66,12 @@ node13>Find exit
 
 ! node13
 Node 13
-You and bros search for an exist which is not blocked by fire. Jorma shouts that the patch to attic hatch is clear.
+You and bros search for an exist which is not blocked by fire. [jorma] shouts that the patch to attic hatch is clear.
 node14>Use hatch
 
 ! node14
 Node 14
-You, Jorma and [grog] clamber your way to the hatch and jump out. You strain your ankle jumping from so high but nothing more serious happens. Standing up, you notice that the whole village is burning. Game Over.
+You, [jorma] and [grog] clamber your way to the hatch and jump out. You strain your ankle jumping from so high but nothing more serious happens. Standing up, you notice that the whole village is burning. Game Over.
 node1>Restart
 
 ! node15
@@ -107,7 +107,7 @@ node1>Restart
 
 ! node21
 Node 21
-You shout at [grog] that the orc is here. [grog] shouts back that he is coming. At the same time the orc janks out his axe from Jorma's skull and raises his axe to swing at you.
+You shout at [grog] that the orc is here. [grog] shouts back that he is coming. At the same time the orc janks out his axe from [jorma]'s skull and raises his axe to swing at you.
 node22>Sidestep
 
 ! node22
