@@ -1,92 +1,92 @@
 ﻿! node1
 Node 1
-[player], [grog] and [jorma] find the orc that you have been tracking. Its right there, cooking a meal.
+[player], [grog] and [jorma] find [orc] that you have been tracking. Its right there, cooking a meal.
 node2>Charge
 
 ! node2
 Node 2
-[player] charge the orc with [grog] and [jorma]. The orc notices you and belts towards the trees. The orc vanishes into the trees before you can catch it.
-node3>Track the orc
+[player] charge [orc] with [grog] and [jorma]. [orc] notices you and belts towards the trees. [orc] vanishes into the trees before you can catch it.
+node3>Track [orc]
 node9>Return home
 
 ! node3
 Node 3
-[player] find the orc's footprints and you start tracking the orc. [player] track the footprints when, suddenly, you hear rustling from a nearby tree.
+You find the orc's footprints and you start tracking the orc. [player] track the footprints when, suddenly, you hear rustling from a nearby tree.
 node4>Sidestep
 
 ! node4
 Node 4
-The orc lands exactly where you were standing and strikes at [jorma], who was standing right behind you, splitting his skull in two. The orc starts janking the axe out with little success.
+[orc] lands exactly where [player] were standing and strikes at [jorma], who was standing right behind [player], splitting his skull in two. [orc] starts janking the axe out with little success.
 node5>Stab
 node21>Call [grog]
 
 ! node5
 Node 5
-The orc notices the tip of your sword coming towards him and crabs your blade with his bare hand.
+[orc] notices the tip of your sword coming towards him and crabs your blade with his bare hand.
 node6>Jank away sword
 node15>Let go
 
 ! node6
 Node 6
-[player] try to jank the sword away from the orc. Orc janks back and you stumble towards the orc.
+[player] try to jank the sword away from [orc]. [orc] janks back and you stumble towards [orc].
 node7>Kick
-node40>Grapple orc
+node40>Grapple [orc]
 
 ! node7
 Node 7
-As you raise your leg to kick the orc, the orc releases its axe and grabs its dagger from its belt and stabs your leg. [player] retract your leg and fall over as you try to stand on the stabbed leg.
+As [player] raise your leg to kick [orc], [orc] releases its axe and grabs its dagger from its belt and stabs your leg. [player] retract your leg and fall over as [player] try to stand on the stabbed leg.
 node8>Cry
 
 ! node8
 Node 8
-As you cry for mercy, the orc thrusts at your heart and kills you. Game Over.
+As [player] cry for mercy, [orc] thrusts at your heart and kills [player]. Game Over.
 node1>Try Again
 
 ! node9
 Node 9
-[player] turn around and start going back the way you came from. After a few hours you return back to your village. Village elder asks where is the head of the orc.
+You turn around and start going back the way you came from. After a few hours you return back to your village. Village elder asks where is the head of [orc].
 node10>We failed
 
 ! node10
 Node 10
-[player] tell the elder how the orc slipped from your hands. Village elder scolds you and tells you that this is unacceptable. He tells you and your bros that you can spend this day sleeping in the haybarn and as of tomorrow you are banished from this village.
+[player] tell the elder how the orc slipped from your hands. Village elder scolds you and tells you that this is unacceptable. He tells [player] and your bros that you can spend this day sleeping in the haybarn and as of tomorrow you are banished from this village.
 node11>Go to barn
 node27>Confront elder
 
 ! node11
 Node 11
-[player] go to the barn and start discussing your next course of action. Two avenues of action rise to the top. First one being that you sleep on it and see if morning is wiser than the evening. Second one being that you just leave the village in the middle of the night.
+You go to the barn and start discussing your next course of action. Two avenues of action rise to the top. First one being that you sleep on it and see if morning is wiser than the evening. Second one being that you just leave the village in the middle of the night.
 node12>Go to Sleep
 node18>Wait for night
 
 ! node12
 Node 12
-[player] get waken up by your couching. Awakened, you discover that the barn is burning. [player] wake up your bros.
+[player] get waken up by your couching. Awakened, [player] discover that the barn is burning. [player] wake up your bros.
 node13>Find exit
 
 ! node13
 Node 13
-[player] and bros search for an exist which is not blocked by fire. [jorma] shouts that the patch to attic hatch is clear.
+[player] and bros search for an exit which is not blocked by fire. [jorma] shouts that the path to attic hatch is clear.
 node14>Use hatch
 
 ! node14
 Node 14
-[player], [jorma] and [grog] clamber your way to the hatch and jump out. [player] strain your ankle jumping from so high but nothing more serious happens. Standing up, you notice that the whole village is burning. Game Over.
+[player], [jorma] and [grog] clamber your way to the hatch and jump out. [player] strain your ankle jumping from so high but nothing more serious happens. Standing up, [player] notice that the whole village is burning. Game Over.
 node1>Restart
 
 ! node15
 Node 15
-[player] violently let go of the sword. The orc is gets distracted with stabilizing your sword.
+[player] violently let go of the sword. [orc] gets distracted with stabilizing your sword.
 node16>Grab your dagger
 
 ! node16
 Node 16
-[player] grab your dagger from your belt and stab the distracted orc between his ribs. The orc starts swinging around with your sword in his hand.
+[player] grab your dagger from your belt and stab the distracted [orc] between his ribs. [orc] starts swinging around with your sword in his hand.
 node17>Back Away
 
 ! node17
 Node 17
-[player] distance yourself from the orc as it starts swinging. The orc does a few swings and collapses. [player] have done it, you have killed the orc. Game Over.
+[player] distance yourself from [orc] as it starts swinging. [orc] does a few swings and collapses. [player] have done it, you have killed [orc]. Game Over.
 node1>Restart
 
 ! node18
@@ -96,56 +96,56 @@ node19>Investigate
 
 ! node19
 Node 19
-[player] and bros approach the bushes and angrily quip at the bushes "Dafuk is going on?". An orc jumps out at you.
+[player] and bros approach the bushes and angrily quip at the bushes "Dafuk is going on?". [orc] jumps out at you.
 node20>Run
 node26>Fight
 
 ! node20
 Node 20
-Orc chases after you and cuts you down one by one with his axe. [player] have died. Game over.
+[orc] chases after you and cuts you down one by one with his axe. [player] have died. Game over.
 node1>Restart
 
 ! node21
 Node 21
-[player] shout at [grog] that the orc is here. [grog] shouts back that he is coming. At the same time the orc janks out his axe from [jorma]'s skull and raises his axe to swing at you.
+[player] shout at [grog] that [orc] is here. [grog] shouts back that he is coming. At the same time [orc] janks out his axe from [jorma]'s skull and raises his axe to swing at you.
 node22>Sidestep
 
 ! node22
 Node 22
-[player] sidestep the axe as the orc brings it down. Orc keeps swinging at you, he is obviously a superior fighter and will surely break your guard eventually.
+[player] sidestep the axe as [orc] brings it down. [orc] keeps swinging at you, he is obviously a superior fighter and will surely break your guard eventually.
 node23>Keep fighting
 node36>Run to [grog]
 
 ! node23
 Node 23
-[player] notice [grog] running towards you from the right.
+[player] notice [grog] running towards [player] from the right.
 node24>Step left
 node25>Step right
 
 ! node24
 Node 24
-[player] step left and the orc turns to face you. At the same time [grog] is running towards the orc who has its back turned at him. [player] deflect a few of the orc's blows. Eventually [grog] reaches you and lodges his hatches as deep into the orc's back as he can. The orc flails around a few moments and dies. [player] have killed the orc. [player] have won. Game Over.
+[player] step left and [orc] turns to face [player]. At the same time [grog] is running towards [orc] who has its back turned at him. [player] deflect a few of the orc's blows. Eventually [grog] reaches [player] and lodges his hatchet as deep into [orc] 's back as he can. [orc] flails around a few moments and dies. [player] have killed [orc]. [player] have won. Game Over.
 node1>Restart
 
 ! node25
 Node 25
-[player] step right. The orc turns to face you and notices [grog]. [grog] reaches to join the fight, however the orc is too good of a fighter and kills both of you. Game over.
+[player] step right. [orc] turns to face you and notices [grog]. [grog] reaches to join the fight, however [orc] is too good of a fighter and kills both of you. Game over.
 node1>Restart
 
 ! node26
 Node 26
-[player] stand your ground and fight the orc. The orc is a formidable opponent, but 3 opponents is clearly too much for it to handle and the three of you manage to slay the orc. [player] have slain the orc. [player] have won.
+[player] stand your ground and fight [orc]. [orc] is a formidable opponent, but 3 opponents is clearly too much for it to handle and the three of you manage to slay [orc]. [player] have slain [orc]. [player] have won.
 node1>Restart
 
 ! node27
 Node 27
-[player] confront the elder. [player] tell him that you will not leave this village without the money that has been promised. Things escalate and the elder pulls his warknife from his belt and thrusts at [grog].
+[player] confront the elder. [player] tell him that [player] will not leave this village without the money that has been promised. Things escalate and the elder pulls his warknife from his belt and thrusts at [grog].
 node28>Strike back
 node31>Restrain elder
 
 ! node28
 Node 28
-As the elder grabbed his knife and thrusted towards [grog], you drew your sword and took a swing at the elder. [grog] got lightly wounded by the elder's knife. Elder however, sustained a severe cut between his shoulder and neck with blood quirting out. He dies few moments later.
+As the elder grabbed his knife and thrusted towards [grog], [player] drew your sword and took a swing at the elder. [grog] got lightly wounded by the elder's knife. Elder however, sustained a severe cut between his shoulder and neck with blood quirting out. He dies few moments later.
 node29>Loot elder
 node34>GTFO
 
@@ -161,38 +161,38 @@ node1>Restart
 
 ! node31
 Node 31
-[player] grab the elder and pull him out of the reach of [grog], causing the elder to thrust at air. [player] grab the elder's hand which holds the knife and wrest the knife away from him. Elder now starts punching at you.
+[player] grab the elder and pull him out of the reach of [grog], causing the elder to thrust at air. [player] grab the elder's hand which holds the knife and wrest the knife away from him. Elder now starts punching at [player].
 node32>Calm him down
 node38>Fuck that
 
 ! node32
 Node 32
-[player] evade his punches and assure him that you do not want to fight. After a few swings the elder calms down. Elder aquires about what are you going to do next.
-node33>Find orc again
+[player] evade his punches and assure him that [player] do not want to fight. After a few swings the elder calms down. Elder aquires about what are [player] going to do next.
+node33>Find [orc] again
 
 ! node33
 Node 33
-Elder displays scepticism, but accepts your proposed course of action. Thus, you set out to find the orc again.
+Elder displays scepticism, but accepts your proposed course of action. Thus, [player] and bros set out to find the orc again.
 node1>Start tracking
 
 ! node34
 Node 34
-[player] and bros run towards the woodline as fast as your legs could carry you. Once you are far enough, you weigh your options from here on with your bros.
+[player] and bros run towards the woodline as fast as your legs could carry you. Once you are far enough, [player] weigh your options from here on with your bros.
 node35>Become bandits
 
 ! node35
 Node 35
-[player] agree to become bandits from now on. One fine day you will find your end at the end of a soldier's blade anyways, so what is there to lose. Game over.
+[player] agree to become bandits from now on. One fine day [player] will find your end at the end of a soldier's blade anyways, so what is there to lose. Game over.
 node1>Restart
 
 ! node36
 Node 36
-[player] turn your back to the orc and run towards [grog]. [player] see [grog] running towards you from some distance.
+[player] turn your back to [orc] and run towards [grog]. [player] see [grog] running towards [player] from some distance.
 node37>[grog] ambush
 
 ! node37
 Node 37
-[player] motion [grog] to hide behind a tree. [grog] does that and you run past that tree. The orc does not notice that [grog] is hiding there. [grog] swings at the orc just as it is going to pass the tree. The orc gets knocked out. [grog] stabs it in the heart to be sure that it is dead. [player] have defeated the orc. [player] have won.
+[player] motion [grog] to hide behind a tree. [grog] does that and [player] run past that tree. [orc] does not notice that [grog] is hiding there. [grog] swings at [orc] just as it is going to pass the tree. [orc] gets knocked out. [grog] stabs it in the heart to be sure that it is dead. [player] have defeated [orc]. [player] have won.
 node1>Restart
 
 ! node38
@@ -202,15 +202,15 @@ node39>Fuck yall
 
 ! node39
 Node 39
-[player] tell the entire crowd to go fuck themselves. The crowd grabs their pitchforks and runs you over, stabbing you to death with pitchforks. [player] die. Game over.
+[player] tell the entire crowd to go fuck themselves. The crowd grabs their pitchforks and runs [player] over, stabbing [player] to death with pitchforks. [player] die. Game over.
 node1>Restart
 
 ! node40
 Node 40
-[player] push with your legs to give you some more momentum and you jump onto the orc, trying to wrestle it. Orc is much stronger and bigger than you and wrestles you to the ground easily. Orc starts to strangle you.
+[player] push with your legs to give [player] some more momentum and you jump onto [orc], trying to wrestle it. [orc] is much stronger and bigger than [player] and wrestles [player] to the ground easily. [orc] starts to strangle [player].
 node41>Grab rock
 
 ! node41
 Node 41
-[player] search for a rock with your free hand. [player] find a bigass rock just in your reach. [player] grab it and slam several times over the orc's head. Orc is knocked out. [player] stab the orc to make sure it is dead. [player] have won, you have killed the orc.
+[player] search for a rock with your free hand. [player] find a bigass rock just in your reach. [player] grab it and slam several times over [orc] 's head. [orc] is knocked out. [player] stab [orc] to make sure it is dead. [player] have won, [player] have killed the orc.
 node1>Restart
