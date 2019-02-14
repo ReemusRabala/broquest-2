@@ -115,7 +115,7 @@ namespace BroQuest
 
             spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend);
             
-            currentNode.Draw(spriteBatch, font, Mouse.GetState());
+            currentNode.Draw(spriteBatch, font, Mouse.GetState(), charDict);
 
             spriteBatch.End();
 
@@ -183,7 +183,7 @@ namespace BroQuest
             ButtonTexture = contentManager.Load<Texture2D>("button");
         }
 
-        public void Draw(SpriteBatch spriteBatch, SpriteFont font, MouseState mouseState)
+        public void Draw(SpriteBatch spriteBatch, SpriteFont font, MouseState mouseState, Dictionary<string, string> charDict)
         {
             spriteBatch.Draw(Texture, new Vector2(0, 0), Color.White);
 
@@ -192,7 +192,7 @@ namespace BroQuest
 
             DrawNavigationBar(spriteBatch, font, mouseState);
 
-            DrawTextBox(spriteBatch, font);
+            DrawTextBox(spriteBatch, font, charDict);
         }
 
         private void DrawNavigationBar(SpriteBatch spriteBatch, SpriteFont font, MouseState mouseState)
@@ -218,7 +218,7 @@ namespace BroQuest
             }
         }
 
-        private void DrawTextBox(SpriteBatch spriteBatch, SpriteFont font)
+        private void DrawTextBox(SpriteBatch spriteBatch, SpriteFont font, Dictionary<string, string> charDict)
         {
             spriteBatch.Draw(TextBackgroundTexture, new Vector2(200, 50), Color.White);
             float textLength = 0;
@@ -230,7 +230,7 @@ namespace BroQuest
 
                 if (textLength < textBoxWidth)
                 {
-                    DrawWord(spriteBatch, font, word, wordLocation);
+                    DrawWord(spriteBatch, font, word, wordLocation, charDict);
                 }
                 else
                 {
@@ -238,14 +238,26 @@ namespace BroQuest
                     currentLine = currentLine + 1;
                     wordLocation = textOrigin + new Vector2(textLength, currentLine * lineStep);
                     textLength = wordStep + textLength + font.MeasureString(word).X;
-                    DrawWord(spriteBatch, font, word, wordLocation);
+                    DrawWord(spriteBatch, font, word, wordLocation, charDict);
                 }
             }
         }
 
-        private static void DrawWord(SpriteBatch spriteBatch, SpriteFont font, string word, Vector2 wordLocation)
+        private static void DrawWord(SpriteBatch spriteBatch, SpriteFont font, string word, Vector2 wordLocation, Dictionary<string, string> charDict)
         {
-            spriteBatch.DrawString(font, word, wordLocation, Color.White);
+            string renderWord = word;
+            Color color = Color.White;
+
+            if ((word.StartsWith("[")) && (word.EndsWith("]")))
+            {
+                char[] charsToTrim = { '[', ']' };
+                string trimmedWord = word.Trim(charsToTrim);
+
+                renderWord = charDict[trimmedWord];
+                color = Color.Blue;
+            }
+
+            spriteBatch.DrawString(font, renderWord, wordLocation, color);
         }
 
         public string Input(MouseState mouseState)
