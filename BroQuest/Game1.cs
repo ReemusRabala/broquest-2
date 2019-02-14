@@ -36,10 +36,25 @@ namespace BroQuest
             foreach (string filePath in filePathList)
             {
                 string nodeText = System.IO.File.ReadAllText(filePath);
-                string fileName = System.IO.Path.GetFileNameWithoutExtension(filePath);
+
+                List<string> blockList = new List<string>(nodeText.Split(new string[] { Environment.NewLine + Environment.NewLine },
+                               StringSplitOptions.RemoveEmptyEntries));
+
+                foreach (string block in blockList)
+                {
+                    string firstLine = new System.IO.StringReader(block).ReadLine();
+                    string[] firstLineArray = firstLine.Split();
+                    string key = firstLineArray[1];
+
+                    Node node = new Node(block, key);
+                    node.LoadContent(Content);
+                    nodeDict.Add(key, node);
+                }
+
+                /*string fileName = System.IO.Path.GetFileNameWithoutExtension(filePath);
                 Node node = new Node(nodeText, fileName);
                 node.LoadContent(Content);
-                nodeDict.Add(fileName, node);
+                nodeDict.Add(fileName, node);*/
             }
 
             currentNode = nodeDict["node1"];
@@ -112,6 +127,8 @@ namespace BroQuest
         {
             string[] lineArray = text.Split(new[] { Environment.NewLine },StringSplitOptions.None);
             List<string> lineList = new List<string>(lineArray);
+
+            lineList.RemoveAt(0);
 
             TitleString = lineList[0];
             lineList.RemoveAt(0);
