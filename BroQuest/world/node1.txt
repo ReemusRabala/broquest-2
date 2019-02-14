@@ -1,11 +1,11 @@
 ﻿! node1
 Node 1
-You, Grog and Jorma find the orc that you have been tracking. Its right there, cooking a meal.
+You, [grog] and Jorma find the orc that you have been tracking. Its right there, cooking a meal.
 node2>Charge
 
 ! node2
 Node 2
-You charge the orc with Grog and Jorma. The orc notices you and belts towards the trees. The orc vanishes into the trees before you can catch it.
+You charge the orc with [grog] and Jorma. The orc notices you and belts towards the trees. The orc vanishes into the trees before you can catch it.
 node3>Track the orc
 node9>Return home
 
@@ -71,7 +71,7 @@ node14>Use hatch
 
 ! node14
 Node 14
-You, Jorma and Grog clamber your way to the hatch and jump out. You strain your ankle jumping from so high but nothing more serious happens. Standing up, you notice that the whole village is burning. Game Over.
+You, Jorma and [grog] clamber your way to the hatch and jump out. You strain your ankle jumping from so high but nothing more serious happens. Standing up, you notice that the whole village is burning. Game Over.
 node1>Restart
 
 ! node15
@@ -118,18 +118,18 @@ node36>Run to Grog
 
 ! node23
 Node 23
-You notice Grog running towards you from the right.
+You notice [grog] running towards you from the right.
 node24>Step left
 node25>Step right
 
 ! node24
 Node 24
-You step left and the orc turns to face you. At the same time Grog is running towards the orc who has its back turned at him. You deflect a few of the orc's blows. Eventually Grog reaches you and lodges his hatches as deep into the orc's back as he can. The orc flails around a few moments and dies. You have killed the orc. You have won. Game Over.
+You step left and the orc turns to face you. At the same time [grog] is running towards the orc who has its back turned at him. You deflect a few of the orc's blows. Eventually [grog] reaches you and lodges his hatches as deep into the orc's back as he can. The orc flails around a few moments and dies. You have killed the orc. You have won. Game Over.
 node1>Restart
 
 ! node25
 Node 25
-You step right. The orc turns to face you and notices Grog. Grog reaches to join the fight, however the orc is too good of a fighter and kills both of you. Game over.
+You step right. The orc turns to face you and notices [grog]. [grog] reaches to join the fight, however the orc is too good of a fighter and kills both of you. Game over.
 node1>Restart
 
 ! node26
@@ -139,13 +139,13 @@ node1>Restart
 
 ! node27
 Node 27
-You confront the elder. You tell him that you will not leave this village without the money that has been promised. Things escalate and the elder pulls his warknife from his belt and thrusts at Grog.
+You confront the elder. You tell him that you will not leave this village without the money that has been promised. Things escalate and the elder pulls his warknife from his belt and thrusts at [grog].
 node28>Strike back
 node31>Restrain elder
 
 ! node28
 Node 28
-As the elder grabbed his knife and thrusted towards Grog, you drew your sword and took a swing at the elder. Grog got lightly wounded by the elder's knife. Elder however, sustained a severe cut between his shoulder and neck with blood quirting out. He dies few moments later.
+As the elder grabbed his knife and thrusted towards [grog], you drew your sword and took a swing at the elder. [grog] got lightly wounded by the elder's knife. Elder however, sustained a severe cut between his shoulder and neck with blood quirting out. He dies few moments later.
 node29>Loot elder
 node34>GTFO
 
@@ -161,7 +161,7 @@ node1>Restart
 
 ! node31
 Node 31
-You grab the elder and pull him out of the reach of Grog, causing the elder to thrust at air. You grab the elder's hand which holds the knife and wrest the knife away from him. Elder now starts punching at you.
+You grab the elder and pull him out of the reach of [grog], causing the elder to thrust at air. You grab the elder's hand which holds the knife and wrest the knife away from him. Elder now starts punching at you.
 node32>Calm him down
 node38>Fuck that
 
@@ -187,12 +187,12 @@ node1>Restart
 
 ! node36
 Node 36
-You turn your back to the orc and run towards Grog. You see Grog running towards you from some distance.
+You turn your back to the orc and run towards Grog. You see [grog] running towards you from some distance.
 node37>Grog ambush
 
 ! node37
 Node 37
-You motion Grog to hide behind a tree. Grog does that and you run past that tree. The orc does not notice that Grog is hiding there. Grog swings at the orc just as it is going to pass the tree. The orc gets knocked out. Grog stabs it in the heart to be sure that it is dead. You have defeated the orc. You have won.
+You motion [grog] to hide behind a tree. [grog] does that and you run past that tree. The orc does not notice that [grog] is hiding there. [grog] swings at the orc just as it is going to pass the tree. The orc gets knocked out. [grog] stabs it in the heart to be sure that it is dead. You have defeated the orc. You have won.
 node1>Restart
 
 ! node38
