@@ -6,8 +6,8 @@ node2>Charge
 ! node2
 Node 2
 You charge the orc with Grog and Jorma. The orc notices you and belts towards the trees. The orc vanishes into the trees before you can catch it.
-node3>Track_the_orc
-node9>Return_home
+node3>Track the orc
+node9>Return home
 
 ! node3
 Node 3
@@ -18,19 +18,19 @@ node4>Sidestep
 Node 4
 The orc lands exactly where you were standing and strikes at Jorma, who was standing right behind you, splitting his skull in two. The orc starts janking the axe out with little success.
 node5>Stab
-node21>Call_Grog
+node21>Call Grog
 
 ! node5
 Node 5
 The orc notices the tip of your sword coming towards him and crabs your blade with his bare hand.
-node6>Jank_away_sword
-node15>Let_go
+node6>Jank away sword
+node15>Let go
 
 ! node6
 Node 6
 You try to jank the sword away from the orc. Orc janks back and you stumble towards the orc.
 node7>Kick
-node40>Grapple_orc
+node40>Grapple orc
 
 ! node7
 Node 7
@@ -40,34 +40,34 @@ node8>Cry
 ! node8
 Node 8
 As you cry for mercy, the orc thrusts at your heart and kills you. Game Over.
-node1>Try_Again
+node1>Try Again
 
 ! node9
 Node 9
 You turn around and start going back the way you came from. After a few hours you return back to your village. Village elder asks where is the head of the orc.
-node10>We_failed
+node10>We failed
 
 ! node10
 Node 10
 You tell the elder how the orc slipped from your hands. Village elder scolds you and tells you that this is unacceptable. He tells you and your bros that you can spend this day sleeping in the haybarn and as of tomorrow you are banished from this village.
-node11>Go_to_barn
-node27>Confront_elder
+node11>Go to barn
+node27>Confront elder
 
 ! node11
 Node 11
 You go to the barn and start discussing your next course of action. Two avenues of action rise to the top. First one being that you sleep on it and see if morning is wiser than the evening. Second one being that you just leave the village in the middle of the night.
-node12>Go_to_Sleep
-node18>Wait_for_night
+node12>Go to Sleep
+node18>Wait for night
 
 ! node12
 Node 12
 You get waken up by your couching. Awakened, you discover that the barn is burning. You wake up your bros.
-node13>Find_exit
+node13>Find exit
 
 ! node13
 Node 13
 You and bros search for an exist which is not blocked by fire. Jorma shouts that the patch to attic hatch is clear.
-node14>Use_hatch
+node14>Use hatch
 
 ! node14
 Node 14
@@ -77,12 +77,12 @@ node1>Restart
 ! node15
 Node 15
 You violently let go of the sword. The orc is gets distracted with stabilizing your sword.
-node16>Grab_your_dagger
+node16>Grab your dagger
 
 ! node16
 Node 16
 You grab your dagger from your belt and stab the distracted orc between his ribs. The orc starts swinging around with your sword in his hand.
-node17>Back_Away
+node17>Back Away
 
 ! node17
 Node 17
@@ -113,14 +113,14 @@ node22>Sidestep
 ! node22
 Node 22
 You sidestep the axe as the orc brings it down. Orc keeps swinging at you, he is obviously a superior fighter and will surely break your guard eventually.
-node23>Keep_fighting
-node36>Run_to_Grog
+node23>Keep fighting
+node36>Run to Grog
 
 ! node23
 Node 23
 You notice Grog running towards you from the right.
-node24>Step_left
-node25>Step_right
+node24>Step left
+node25>Step right
 
 ! node24
 Node 24
@@ -140,19 +140,19 @@ node1>Restart
 ! node27
 Node 27
 You confront the elder. You tell him that you will not leave this village without the money that has been promised. Things escalate and the elder pulls his warknife from his belt and thrusts at Grog.
-node28>Strike_back
-node31>Restrain_elder
+node28>Strike back
+node31>Restrain elder
 
 ! node28
 Node 28
 As the elder grabbed his knife and thrusted towards Grog, you drew your sword and took a swing at the elder. Grog got lightly wounded by the elder's knife. Elder however, sustained a severe cut between his shoulder and neck with blood quirting out. He dies few moments later.
-node29>Loot_elder
+node29>Loot elder
 node34>GTFO
 
 ! node29
 Node 29
 You investigate what the elder has on his person and find a pouch of cold strapped to his belt. You take the pouch. During this looting, a mob of angry villagers gathers around you.
-node30>Hide_in_house
+node30>Hide in house
 
 ! node30
 Node 30
@@ -162,23 +162,23 @@ node1>Restart
 ! node31
 Node 31
 You grab the elder and pull him out of the reach of Grog, causing the elder to thrust at air. You grab the elder's hand which holds the knife and wrest the knife away from him. Elder now starts punching at you.
-node32>Calm_him_down
-node38>Fuck_that
+node32>Calm him down
+node38>Fuck that
 
 ! node32
 Node 32
 You evade his punches and assure him that you do not want to fight. After a few swings the elder calms down. Elder aquires about what are you going to do next.
-node33>Find_orc_again
+node33>Find orc again
 
 ! node33
 Node 33
 Elder displays scepticism, but accepts your proposed course of action. Thus, you set out to find the orc again.
-node1>Start_tracking
+node1>Start tracking
 
 ! node34
 Node 34
 You and bros run towards the woodline as fast as your legs could carry you. Once you are far enough, you weigh your options from here on with your bros.
-node35>Become_bandits
+node35>Become bandits
 
 ! node35
 Node 35
@@ -188,7 +188,7 @@ node1>Restart
 ! node36
 Node 36
 You turn your back to the orc and run towards Grog. You see Grog running towards you from some distance.
-node37>Grog_ambush
+node37>Grog ambush
 
 ! node37
 Node 37
@@ -198,7 +198,7 @@ node1>Restart
 ! node38
 Node 38
 You get fucking pissed and punch the fucker as hard as you can, knocking him out. A crowd has noticed what is going on.
-node39>Fuck_yall
+node39>Fuck yall
 
 ! node39
 Node 39
@@ -208,7 +208,7 @@ node1>Restart
 ! node40
 Node 40
 You push with your legs to give you some more momentum and you jump onto the orc, trying to wrestle it. Orc is much stronger and bigger than you and wrestles you to the ground easily. Orc starts to strangle you.
-node41>Grab_rock
+node41>Grab rock
 
 ! node41
 Node 41
