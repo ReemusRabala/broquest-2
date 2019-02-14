@@ -14,6 +14,7 @@ namespace BroQuest
         SpriteFont font;
 
         Dictionary<string, Node> nodeDict = new Dictionary<string, Node>();
+        Dictionary<string, string> charDict = new Dictionary<string, string>();
 
         Node currentNode;
 
@@ -46,13 +47,22 @@ namespace BroQuest
                     string[] firstLineArray = firstLine.Split();
                     string blockType = firstLineArray[0];
 
-                    if (blockType == "!")
+                    if (blockType == "!") // if the text block defines node
                     {
                         string key = firstLineArray[1];
 
                         Node node = new Node(block, key);
                         node.LoadContent(Content);
                         nodeDict.Add(key, node);
+                    }
+
+                    else if (blockType == "@") // if text block defines character
+                    {
+                        string key = firstLineArray[1];
+                        string name = new List<string>(block.Split(new string[] { Environment.NewLine },
+                               StringSplitOptions.RemoveEmptyEntries))[1];
+
+                        charDict.Add(key, name);
                     }
                 }
             }
@@ -220,7 +230,7 @@ namespace BroQuest
 
                 if (textLength < textBoxWidth)
                 {
-                    spriteBatch.DrawString(font, word, wordLocation, Color.White);
+                    DrawWord(spriteBatch, font, word, wordLocation);
                 }
                 else
                 {
@@ -228,9 +238,14 @@ namespace BroQuest
                     currentLine = currentLine + 1;
                     wordLocation = textOrigin + new Vector2(textLength, currentLine * lineStep);
                     textLength = wordStep + textLength + font.MeasureString(word).X;
-                    spriteBatch.DrawString(font, word, wordLocation, Color.White);
+                    DrawWord(spriteBatch, font, word, wordLocation);
                 }
             }
+        }
+
+        private static void DrawWord(SpriteBatch spriteBatch, SpriteFont font, string word, Vector2 wordLocation)
+        {
+            spriteBatch.DrawString(font, word, wordLocation, Color.White);
         }
 
         public string Input(MouseState mouseState)
