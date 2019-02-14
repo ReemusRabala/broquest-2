@@ -297,7 +297,21 @@ namespace BroQuest
 
         private float MeasureWord(SpriteFont font, string word, Dictionary<string, string> charDict)
         {
-            float result = font.MeasureString(word).X;
+            bool endsWithPoint = false;
+            bool endsWithComma = false;
+
+            if (word.EndsWith("."))
+            {
+                endsWithPoint = true;
+                char[] firstTrimChars = { '.' };
+                word = word.Trim(firstTrimChars);
+            }
+            else if (word.EndsWith(","))
+            {
+                endsWithComma = true;
+                char[] firstTrimChars = { ',' };
+                word = word.Trim(firstTrimChars);
+            }
 
             if ((word.StartsWith("[")) && (word.EndsWith("]")))
             {
@@ -305,8 +319,19 @@ namespace BroQuest
                 string trimmedWord = word.Trim(charsToTrim);
 
                 string displayedWord = charDict[trimmedWord];
-                result = font.MeasureString(displayedWord).X;
+                word = displayedWord;
             }
+
+            if (endsWithPoint)
+            {
+                word = word + '.';
+            }
+            else if (endsWithComma)
+            {
+                word = word + ',';
+            }
+
+            float result = font.MeasureString(word).X;
 
             return result;
         }
