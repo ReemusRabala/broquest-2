@@ -107,7 +107,7 @@ node1>Restart
 
 ! node21
 Node 21
-You shout at Grog that the orc is here. Grog shouts back that he is coming. At the same time the orc janks out his axe from Jorma's skull and raises his axe to swing at you.
+You shout at [grog] that the orc is here. [grog] shouts back that he is coming. At the same time the orc janks out his axe from Jorma's skull and raises his axe to swing at you.
 node22>Sidestep
 
 ! node22
@@ -187,7 +187,7 @@ node1>Restart
 
 ! node36
 Node 36
-You turn your back to the orc and run towards Grog. You see [grog] running towards you from some distance.
+You turn your back to the orc and run towards [grog]. You see [grog] running towards you from some distance.
 node37>Grog ambush
 
 ! node37
