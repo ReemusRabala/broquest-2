@@ -264,7 +264,7 @@ namespace BroQuest
                 string trimmedWord = word.Trim(charsToTrim);
 
                 renderWord = charDict[trimmedWord];
-                color = Color.Blue;
+                color = Color.LightGreen;
             }
 
             spriteBatch.DrawString(font, renderWord, wordLocation, color);
