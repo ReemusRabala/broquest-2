@@ -18,7 +18,7 @@ node4>Sidestep
 Node 4
 The orc lands exactly where you were standing and strikes at Jorma, who was standing right behind you, splitting his skull in two. The orc starts janking the axe out with little success.
 node5>Stab
-node21>Call Grog
+node21>Call [grog]
 
 ! node5
 Node 5
@@ -114,7 +114,7 @@ node22>Sidestep
 Node 22
 You sidestep the axe as the orc brings it down. Orc keeps swinging at you, he is obviously a superior fighter and will surely break your guard eventually.
 node23>Keep fighting
-node36>Run to Grog
+node36>Run to [grog]
 
 ! node23
 Node 23
@@ -188,7 +188,7 @@ node1>Restart
 ! node36
 Node 36
 You turn your back to the orc and run towards [grog]. You see [grog] running towards you from some distance.
-node37>Grog ambush
+node37>[grog] ambush
 
 ! node37
 Node 37

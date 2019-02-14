@@ -190,12 +190,12 @@ namespace BroQuest
             spriteBatch.Draw(TitleBarTexture, new Vector2(200, 10), Color.White);
             spriteBatch.DrawString(font, TitleString, new Vector2(205, 15), Color.White);
 
-            DrawNavigationBar(spriteBatch, font, mouseState);
+            DrawNavigationBar(spriteBatch, font, mouseState, charDict);
 
             DrawTextBox(spriteBatch, font, charDict);
         }
 
-        private void DrawNavigationBar(SpriteBatch spriteBatch, SpriteFont font, MouseState mouseState)
+        private void DrawNavigationBar(SpriteBatch spriteBatch, SpriteFont font, MouseState mouseState, Dictionary<string, string> charDict)
         {
             spriteBatch.Draw(NavigationBarTexture, new Vector2(10, 10), Color.White);
             int buttonY = 0;
@@ -213,7 +213,17 @@ namespace BroQuest
                 spriteBatch.Draw(ButtonTexture, buttonPos, color);
 
                 Vector2 textPos = buttonPos + new Vector2(5, 5);
-                spriteBatch.DrawString(font, linkString, textPos, Color.White);
+
+                List<string> linkWordList = new List<string>(linkString.Split());
+
+                foreach (string word in linkWordList)
+                {
+                    DrawWord(spriteBatch, font, word, textPos, charDict);
+                    float wordLength = MeasureWord(font, word, charDict);
+                    float deltaX = wordLength + wordStep;
+                    textPos = textPos + new Vector2(deltaX, 0);
+                }
+
                 buttonY = buttonY + buttonStep;
             }
         }
