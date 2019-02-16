@@ -9,3 +9,6 @@ Jorma
 
 @ orc
 The Orc
+
+@ elder
+The Elder
