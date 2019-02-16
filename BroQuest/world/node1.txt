@@ -44,14 +44,14 @@ node1>Try Again
 
 ! node9
 Node 9
-You turn around and start going back the way you came from. After a few hours you return back to your village. Village elder asks where is the head of [orc].
+You turn around and start going back the way you came from. After a few hours you return back to your village. Village [elder] asks where is the head of [orc].
 node10>We failed
 
 ! node10
 Node 10
-[player] tell the elder how the orc slipped from your hands. Village elder scolds you and tells you that this is unacceptable. He tells [player] and your bros that you can spend this day sleeping in the haybarn and as of tomorrow you are banished from this village.
+[player] tell the [elder] how the orc slipped from your hands. Village [elder] scolds you and tells you that this is unacceptable. He tells [player] and your bros that you can spend this day sleeping in the haybarn and as of tomorrow you are banished from this village.
 node11>Go to barn
-node27>Confront elder
+node27>Confront [elder]
 
 ! node11
 Node 11
@@ -139,19 +139,19 @@ node1>Restart
 
 ! node27
 Node 27
-[player] confront the elder. [player] tell him that [player] will not leave this village without the money that has been promised. Things escalate and the elder pulls his warknife from his belt and thrusts at [grog].
+[player] confront the [elder]. [player] tell him that [player] will not leave this village without the money that has been promised. Things escalate and the [elder] pulls his warknife from his belt and thrusts at [grog].
 node28>Strike back
-node31>Restrain elder
+node31>Restrain [elder]
 
 ! node28
 Node 28
-As the elder grabbed his knife and thrusted towards [grog], [player] drew your sword and took a swing at the elder. [grog] got lightly wounded by the elder's knife. Elder however, sustained a severe cut between his shoulder and neck with blood quirting out. He dies few moments later.
-node29>Loot elder
+As the [elder] grabbed his knife and thrusted towards [grog], [player] drew your sword and took a swing at the [elder]. [grog] got lightly wounded by the [elder] 's knife. [elder] however, sustained a severe cut between his shoulder and neck with blood quirting out. He dies few moments later.
+node29>Loot [elder]
 node34>GTFO
 
 ! node29
 Node 29
-[player] investigate what the elder has on his person and find a pouch of cold strapped to his belt. [player] take the pouch. During this looting, a mob of angry villagers gathers around you.
+[player] investigate what the [elder] has on his person and find a pouch of cold strapped to his belt. [player] take the pouch. During this looting, a mob of angry villagers gathers around you.
 node30>Hide in house
 
 ! node30
@@ -161,18 +161,18 @@ node1>Restart
 
 ! node31
 Node 31
-[player] grab the elder and pull him out of the reach of [grog], causing the elder to thrust at air. [player] grab the elder's hand which holds the knife and wrest the knife away from him. Elder now starts punching at [player].
+[player] grab the [elder] and pull him out of the reach of [grog], causing the [elder] to thrust at air. [player] grab the [elder]'s hand which holds the knife and wrest the knife away from him. [elder] now starts punching at [player].
 node32>Calm him down
 node38>Fuck that
 
 ! node32
 Node 32
-[player] evade his punches and assure him that [player] do not want to fight. After a few swings the elder calms down. Elder aquires about what are [player] going to do next.
+[player] evade his punches and assure him that [player] do not want to fight. After a few swings the [elder] calms down. [elder] aquires about what are [player] going to do next.
 node33>Find [orc] again
 
 ! node33
 Node 33
-Elder displays scepticism, but accepts your proposed course of action. Thus, [player] and bros set out to find the orc again.
+[elder] displays scepticism, but accepts your proposed course of action. Thus, [player] and bros set out to find the orc again.
 node1>Start tracking
 
 ! node34
